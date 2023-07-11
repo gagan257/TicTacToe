@@ -41,7 +41,7 @@ export default class Game extends React.Component {
     let status
     const winner = calculateWinner(current.squares)
     if(winner){
-      status = 'The Winner is ' + winner
+      status = 'The Winner is ' + winner + ' RELOAD TO RESTART GAME'
     } else{
       status = 'Next player is ' + (this.state.xIsNext ? 'X':'O')
     }
